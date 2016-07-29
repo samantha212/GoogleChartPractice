@@ -7,7 +7,7 @@ google.charts.setOnLoadCallback(drawBarChart);
 
 function drawBarChart() {
     var chartOneData = google.visualization.arrayToDataTable([
-        ['Participant Ages', 'Number of Participants'],
+        ['Number of Participants', 'Participants'],
         [18, 0],
         [19, 2],
         [20, 1],
@@ -22,13 +22,13 @@ function drawBarChart() {
 
     var chartOneOptions = {
         title: "Ages of Participants",
-        chartArea: {width: 50},
+        chartArea: {width: 500},
         hAxis: {
-            title: "Age",
-            minValue: 18
+            title: "Number of Participants"
         },
         vAxis: {
-            title: "Number of Participants"
+            title: "Age",
+            minValue: 18
         }
     };
 
