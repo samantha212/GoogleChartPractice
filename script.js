@@ -22,7 +22,7 @@ function drawBarChart() {
 
     var chartOneOptions = {
         title: "Ages of Participants",
-        chartArea: {width: 50%},
+        chartArea: {width: 50},
         hAxis: {
             title: "Age",
             minValue: 18
