@@ -9,29 +9,30 @@ google.charts.setOnLoadCallback(drawGeoChart);
 
 function drawBarChart() {
     var chartOneData = google.visualization.arrayToDataTable([
-        ['Number of Participants', 'Participants'],
-        [18, 0],
-        [19, 2],
-        [20, 1],
-        [21, 0],
-        [22, 4],
-        [25, 3],
-        [26, 7],
-        [28, 4],
-        [29, 6],
-        [30, 4]
+        ['Number of Participants', 'Participants', { role: 'style' }],
+        [18, 0, 'color: green'],
+        [19, 2, 'color: blue'],
+        [20, 1, 'color: purple'],
+        [21, 0, 'color: green'],
+        [22, 4, 'color: blue'],
+        [25, 3, 'color: purple'],
+        [26, 7, 'color: green'],
+        [28, 4, 'color: blue'],
+        [29, 6, 'color: purple'],
+        [30, 4, 'color: green']
     ]);
 
     var chartOneOptions = {
         title: "Ages of Participants",
-        chartArea: {width: 500},
+        chartArea: {width: 500, height: 600},
         hAxis: {
             title: "Number of Participants"
         },
         vAxis: {
             title: "Age",
             minValue: 18
-        }
+        },
+        colors: ['#0B2E59']
     };
 
     var chartOne = new google.visualization.BarChart(document.getElementById('chartOne'));
