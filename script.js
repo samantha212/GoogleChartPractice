@@ -93,7 +93,10 @@ function drawGeoChart() {
         ['Poland', 1]
     ]);
 
-    var geoChartOptions = {};
+    var geoChartOptions = {
+        backgroundColor: '#C4C9CE',
+        colors: ['#00DFFC', '#005F6B']
+    };
 
     var geoChart = new google.visualization.GeoChart(document.getElementById('chartThree'));
 
