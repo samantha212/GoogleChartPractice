@@ -24,7 +24,8 @@ function drawBarChart() {
 
     var chartOneOptions = {
         title: "Ages of Participants",
-        chartArea: {width: 500, height: 600},
+        height: 500,
+        width: 800,
         hAxis: {
             title: "Number of Participants"
         },
