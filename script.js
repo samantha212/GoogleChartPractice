@@ -97,7 +97,9 @@ function drawGeoChart() {
 
     var geoChartOptions = {
         backgroundColor: '#C4C9CE',
-        colors: ['#00DFFC', '#005F6B']
+        colors: ['#00DFFC', '#005F6B'],
+        magnifyingGlass: {enable: true},
+        region: '150'
     };
 
     var geoChart = new google.visualization.GeoChart(document.getElementById('chartThree'));
